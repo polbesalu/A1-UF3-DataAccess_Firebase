@@ -15,7 +15,7 @@ namespace A1_UF3_DataAccess.DataAccess.Repositories
         FirebaseClient Firebase { get; set; }
         public FirebaseRepository() 
         {
-            Firebase = FirebaseConnection.GetFirebaseClient("https://provadam-15e08-default-rtdb.europe-west1.firebasedatabase.app/");
+            Firebase = FirebaseConnection.GetFirebaseClient("https://provafirebase-e63fd-default-rtdb.europe-west1.firebasedatabase.app/");
         }
         public async Task<bool> AddStudent(Student student)
         {
