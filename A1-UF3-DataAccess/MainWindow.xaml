@@ -1,0 +1,163 @@
+﻿<Window x:Class="A1_UF3_DataAccess.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A1_UF3_DataAccess"
+        mc:Ignorable="d"
+        Title="A1-Firebase" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button 
+            Grid.Row="0" 
+            Margin="20" 
+            Name="btnCreate" 
+            Content="Create" 
+            Click="btnCreate_Click"/>
+        
+        <Button 
+            Grid.Row="1" 
+            Margin="20" 
+            Name="btnUpdate" 
+            Content="Update" 
+            Click="btnUpdate_Click"/>
+        
+        <Button 
+            Grid.Row="2" 
+            Margin="20" 
+            Name="btnDelete" 
+            Content="Delete" 
+            Click="btnDelete_Click"/>
+        
+        <DataGrid 
+            Grid.Row="3" 
+            Grid.Column="0" 
+            Grid.RowSpan="2" 
+            Grid.ColumnSpan="5" 
+            Margin="10">
+            
+        </DataGrid>
+        
+        <ComboBox 
+            Grid.Row="1" 
+            Name="cmbUpdate" 
+            Grid.Column="1" 
+            Margin="20"/>
+        
+        <ComboBox Grid.Row="2" 
+                  Name="cmbDelete" 
+                  Grid.Column="1" 
+                  Margin="20"/>
+        
+        <Grid 
+            Grid.Row="0" 
+            Grid.Column="2" 
+            Grid.RowSpan="3" 
+            Grid.ColumnSpan="3">
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock 
+                Grid.Row="0" 
+                Grid.Column="0" 
+                Text="Nom"
+                VerticalAlignment="Bottom" 
+                Margin="5"/>
+            
+            <TextBlock 
+                Grid.Row="2" 
+                Grid.Column="0" 
+                Text="Id" 
+                VerticalAlignment="Bottom"
+                Margin="5"/>
+            
+            <TextBlock 
+                Grid.Row="4"
+                Grid.Column="0" 
+                Text="Email" 
+                VerticalAlignment="Bottom" 
+                Margin="5"/>
+            
+            <TextBlock 
+                Grid.Row="0" 
+                Grid.Column="1" 
+                Text="Average Score" 
+                VerticalAlignment="Bottom" 
+                Margin="5"/>
+            
+            <TextBlock 
+                Grid.Row="2" 
+                Grid.Column="1" 
+                Text="Dual" 
+                VerticalAlignment="Bottom" 
+                Margin="5"/>
+            
+            <TextBlock
+                Grid.Row="4"
+                Grid.Column="1" 
+                Text="Curs" 
+                VerticalAlignment="Bottom" 
+                Margin="5"/>
+            
+            <TextBox 
+                Grid.Row="1" 
+                Grid.Column="0" 
+                Name="tbName" 
+                Margin="5"/>
+            
+            <TextBox 
+                Grid.Row="3"
+                Grid.Column="0" 
+                Name="tbId"
+                Margin="5"/>
+            
+            <TextBox 
+                Grid.Row="5" 
+                Grid.Column="0"
+                Name="tbEmail" 
+                Margin="5"/>
+            
+            <TextBox 
+                Grid.Row="1" 
+                Grid.Column="1" 
+                Name="tbAverageScore" 
+                Margin="5"/>
+            
+            <TextBox 
+                Grid.Row="3" 
+                Grid.Column="1" 
+                Name="tbDual" 
+                Margin="5"/>
+            
+            <TextBox 
+                Grid.Row="5"
+                Grid.Column="1" 
+                Name="tbCicle" 
+                Margin="5"/>
+        </Grid>
+    </Grid>
+</Window>
